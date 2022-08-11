@@ -1,0 +1,86 @@
+<! Doctype HTML>
+<html>
+    <head>
+        <title>Primer examen parcial</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="./estilo.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="estilo_bloque">
+            <img class="img-circulo" src="Imagenes/foto_perfil_vacio.jpg">
+            <p>Hugo Villatoro</p>
+            <nav align="center">
+                <a href="pagina_parcial.html">Inicio</a> |
+                <a href="https://www.php.net/">Php</a> |
+                <a href="https://visualstudio.microsoft.com/es/vs/features/net-development/">.Net</a> |
+                <a href="https://www.java.com/es/">Java</a>
+            </nav>
+        </header>
+
+        <div class="estilo_bloque">
+            <h2>Lenguajes de Programación</h2>
+            <ol>
+                <li>Paginas Web</li>
+                <ul class="lista_paginas">
+                    <li>JSP</li>
+                    <li>Aspx</li>
+                    <li>Php</li>
+                </ul>
+                <li>Aplicaciones</li>
+                <ul class="lista_aplicaciones">
+                    <li>Java</li>
+                    <li>Visual Basic</li>
+                    <li>C#</li>
+                </ul>
+            </ol>
+        </div>
+        
+        
+        <div class="estilo_bloque">
+            <table>
+                <tr><td colspan="2">Programacion Web</td></tr>
+                <tr><td>Asp</td><td>Jsp</td></tr>
+                <tr><td>Php</td><td>Ruby</td></tr>
+                <tr><td>Python</td><td>Go</td></tr>
+            </table>
+        </div>
+
+        <div class="estilo_bloque">
+            <form name="ingreso" onsubmit="return formAlert()">
+                <input type="text" id="txtNombres" name="txtNombres" placeholder="Ingrese Nombres" required>
+                <input type="text" id="txtApellidos" name="txtApellidos" placeholder="Ingrese Apellidos" required>
+                <input type="number" id="txtTelefono" name="txtTelefono" placeholder="Ingrese Numero Telefonico" required>
+                <input type="email" id="txtCorreo" name="txtCorreo" placeholder="Ingrese Correo Electronico" required>
+                <input type="date" id="txtFecha" name="txtFecha" placeholder="Ingrese Fecha Nacimiento" required>
+                <textarea id="txtMensaje" name="txtMensaje" placeholder="Ingrese el Mensaje"></textarea>
+                <input type="submit" class="boton" name="eviar" id="enviar" value="Enviar">
+            </form>
+        </div>
+
+        <script type="text/javascript">
+            function formAlert() {
+                var nuevaLinea = "\r\n"
+                var alert_string = '';
+                alert_string = alert_string + document.getElementById("txtNombres").value;
+                alert_string = alert_string + nuevaLinea + document.getElementById("txtApellidos").value;
+                alert_string = alert_string + nuevaLinea + document.getElementById("txtTelefono").value;
+                alert_string = alert_string + nuevaLinea + document.getElementById("txtCorreo").value;
+                alert_string = alert_string + nuevaLinea + document.getElementById("txtFecha").value;
+                alert_string = alert_string + nuevaLinea + document.getElementById("txtMensaje").value;
+                
+                alert(alert_string);
+            }
+        </script>
+                
+        <div class="estilo_bloque" id="redes_sociales" >
+            <h3>Redes Sociales</h3>
+            <a href="#"><img src="Imagenes/facebook.png"></a>
+            <a href="#"><img src="Imagenes/twitter.png"></a>
+        </div>
+    </body>
+    <footer>
+        <p align=center>Aprende a Programar Fácil y Rápido &copy;</p>
+    </footer>
+
+    
+</html>
